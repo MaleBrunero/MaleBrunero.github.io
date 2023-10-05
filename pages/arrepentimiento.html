@@ -27,7 +27,7 @@
             <div> <a href="../pages/mi-cuenta.html" id="mi-cuenta"><img class="icon_header"
                         src="../images/avatar.png"></a>
                 <a href="../pages/carrito.html"><img class="icon_header" src="../images/mycart.png"></a>
-                <a href="../pages/tiendas.html" id="tiendas"><img class="icon_header" src="../images/ubicación.png"
+                <a href="../pages/tiendas.html" id="tiendas"><img class="icon_header" src="../images/ubicacion.png"
                         alt=""></a>
             </div>
         </div>
@@ -92,42 +92,51 @@
         poner el bien a disposición del vendedor y los gastos de devolución son por cuenta de este último.</p>
 
     <form id="arrepentimiento_form" action="formulario.php" method="post">
-        <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required><br><br>
-        </div>
-        <div>
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required><br><br>
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-        </div>
-        <div>
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono" required><br><br>
-        </div>
-        <div>
-            <label for="pedido">Número de Pedido:</label>
-            <input type="text" id="pedido" name="pedido" required><br><br>
-        </div>
-        <div>
-            <label for="motivo">Motivo:</label>
-            <select id="motivo" name="motivo" required>
-                <option value="cambio">Cambio de opinión</option>
-                <option value="producto_defectuoso">Producto defectuoso</option>
-                <option value="no_esperado">No es lo que esperaba</option>
-                <option value="datos_envio">Coloqué mal los datos de envío</option>
-                <option value="otro">Otro motivo</option>
-            </select><br><br>
-        </div>
-        <div>
-            <label for="comentarios">Comentarios:</label><br>
-            <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
-        </div>
-        <div>
-            <button class="form-button" type="submit">Enviar Formulario</button>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required><br><br>
+                </div>
+                <div class="col">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required><br><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+                </div>
+                <div class="col">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required><br><br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <label for="pedido">Número de Pedido:</label>
+                    <input type="text" id="pedido" name="pedido" required><br><br>
+                </div>
+                <div class="col">
+                    <label for="motivo">Motivo:</label>
+                    <select id="motivo" name="motivo" required>
+                        <option value="cambio">Cambio de opinión</option>
+                        <option value="producto_defectuoso">Producto defectuoso</option>
+                        <option value="no_esperado">No es lo que esperaba</option>
+                        <option value="datos_envio">Coloqué mal los datos de envío</option>
+                        <option value="otro">Otro motivo</option>
+                    </select><br><br>
+                </div>
+            </div>
+            <div>
+                <label for="comentarios">Comentarios:</label><br>
+                <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br><br>
+            </div>
+            <div>
+                <button class="form-button" type="submit">Enviar Formulario</button>
+            </div>
         </div>
     </form>
 
