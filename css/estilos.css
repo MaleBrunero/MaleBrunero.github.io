@@ -3,6 +3,7 @@
 @media only screen and (max-width: 599px) {
 
     #header-container {
+        height: 8rem;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -10,17 +11,17 @@
     }
 
     #barra {
-        width: 15rem;
+        width: 10%;
         height: 2rem;
-        margin: 0;
     }
 
     #logo {
         display: none;
     }
 
-    #tiendas {
-        display: none
+
+    .icon_header {
+        display: none;
     }
 
     #main-banner {
@@ -101,7 +102,7 @@
 }
 
 #header-container {
-    padding: 2%;
+    margin: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -114,7 +115,6 @@
 }
 
 #search-bar {
-    width: 50rem;
     height: 3rem;
     margin: 0;
     padding-left: 1rem;
@@ -169,6 +169,15 @@ header {
     color: #86134D;
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
+}
+
+#prueba {
+    background-color: black;
+}
+
+#barra {
+    width: 70%;
+    height: 2rem;
 }
 
 nav {
