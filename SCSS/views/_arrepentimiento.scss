@@ -1,0 +1,42 @@
+.form {
+
+    margin: 2rem;
+
+    @include static-flex;
+    flex-direction: column;
+
+    h1 {
+        @include principal-heading;
+        margin-bottom: 0.5rem;
+    }
+
+    #legales-arrepentimiento {
+        margin: $default-margin;
+        padding: 2rem;
+        font-size: 1.5rem;
+        text-align: justify
+    }
+
+    .form-button {
+        @include ver-mas-button;
+        width: auto;
+
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .form {
+        h1 {
+            font-size: 3rem;
+        }
+
+        #legales-arrepentimiento {
+            font-size: 1rem;
+        }
+
+        textarea {
+
+            width: 100%;
+        }
+    }
+}

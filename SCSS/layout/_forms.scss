@@ -1,0 +1,42 @@
+.form-style {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+
+
+    label {
+        color: $default-color;
+        font-size: 1.2rem;
+    }
+
+    input {
+        border-radius: 0.5rem;
+        border-color: $main-bg-color;
+        font-size: 1.2rem;
+    }
+
+    select {
+        border-radius: 0.5rem;
+        border-color: $main-bg-color;
+        font-size: 1.2rem;
+    }
+
+
+    textarea {
+        border-radius: 0.5rem;
+        border-color: $main-bg-color;
+        font-size: 1rem;
+    }
+
+}
+
+@media only screen and (max-width: 599px) {
+    .form-style {
+        align-items: center;
+
+        textarea {
+            margin-left: 1rem;
+            margin-right: 1rem;
+        }
+    }
+}

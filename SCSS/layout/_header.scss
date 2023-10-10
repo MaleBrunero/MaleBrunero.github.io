@@ -1,0 +1,94 @@
+header {
+    width: $default-width;
+    margin: 0;
+    background-color: $main-bg-color;
+    padding-bottom: 0;
+
+
+    #barra-sup {
+
+        padding: 0;
+
+        #header-container {
+            @include static-flex;
+            height: 6rem;
+            flex-wrap: wrap;
+            width: $default-width;
+            margin: 0;
+            padding: 0;
+
+
+
+            #logo {
+                width: 6rem;
+
+                padding-bottom: 0;
+            }
+
+            .icon_header {
+                width: 2rem;
+                height: 2rem;
+                margin: $default-margin;
+                padding: 0;
+
+            }
+
+            .icon_header:hover {
+                width: 3.5rem;
+                height: 3.5rem;
+            }
+
+            #search-bar {
+                height: 1.5rem;
+                margin: $default-margin;
+                padding-left: 1rem;
+                border-color: $default-color;
+                border-radius: 0.5rem;
+                display: flex;
+                justify-content: space-evenly;
+
+            }
+
+            #barra {
+                width: 70%;
+                height: 2rem;
+                border-radius: 0.5rem;
+                border-color: $secondary-color;
+            }
+
+            .search-button {
+                color: $default-color;
+                background-color: white;
+                border-color: $default-color;
+                border-radius: 0.5em;
+                width: 7rem;
+                height: 2rem;
+                justify-self: center;
+            }
+
+            .search-button:hover {
+                background-color: $default-color;
+                color: white;
+            }
+
+        }
+
+    }
+}
+
+
+@media only screen and (max-width: 960px) {
+
+    #logo {
+        display: none;
+    }
+
+    .icon_header {
+        display: none
+    }
+
+    .search-button {
+        display: none;
+    }
+
+}

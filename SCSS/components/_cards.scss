@@ -1,0 +1,22 @@
+.card {
+    border-color: #F2E6D0;
+    padding: 2rem;
+    width: 15rem;
+    box-shadow: 5px 10px 10px rgb(227, 225, 225);
+    text-align: center;
+
+    a {
+        color: $default-color;
+        background-color: white;
+        border-color: $default-color;
+        border-radius: 0.5em;
+        width: 7rem;
+        height: 2.5rem;
+
+    }
+
+    a:hover {
+        background-color: $default-color;
+        color: white
+    }
+}

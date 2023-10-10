@@ -1,0 +1,130 @@
+#main-banner {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+
+    video {
+        width: 100%;
+    }
+
+    button {
+        @include ver-mas-button;
+    }
+}
+
+h2 {
+    @include h2-styles;
+}
+
+.carrousel {
+    @include static-flex;
+
+    .card {
+        margin: 2rem;
+    }
+}
+
+.button-container {
+    text-align: center;
+
+    #destacados-button {
+        @include ver-mas-button;
+
+    }
+}
+
+.section-container {
+    margin-top: 1.5rem;
+    width: 100%;
+    @include static-flex;
+    align-self: center;
+
+    img {
+        height: 400px;
+    }
+}
+
+.payment-methods {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+
+
+
+    h3 {
+        color: $default-color;
+        margin-top: 4rem;
+    }
+
+    #payment-methods-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        justify-items: center;
+        width: 70%;
+
+        .payment-methods-item {
+            display: flex;
+            width: 12em;
+            height: 12em;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+
+            img {
+                width: 100%;
+
+                text-align: center;
+
+            }
+
+
+        }
+
+
+    }
+
+    button {
+
+        @include ver-mas-button
+    }
+
+}
+
+#destacados-container {
+
+    @include static-flex;
+    margin: 1rem;
+
+    #banner-2 {
+        width: 100%;
+        margin: $default-margin
+    }
+
+    #card-container {
+        @include static-flex;
+
+    }
+
+}
+
+
+@media only screen and (max-width: 599px) {
+
+    #main-banner {
+        display: none;
+    }
+
+    #payment-methods-container {
+        display: flex;
+        flex-direction: column;
+
+        .payment-methods-item:nth-child(3),
+        .payment-methods-item:nth-child(5) {
+            display: none;
+        }
+    }
+
+}

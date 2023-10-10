@@ -1,0 +1,412 @@
+@charset "UTF-8";
+/*
+@mixin form-flex {
+    Acá va el flex para los formularios
+}
+*/
+header {
+  width: 100%;
+  margin: 0;
+  background-color: #F2E6D0;
+  padding-bottom: 0;
+}
+header #barra-sup {
+  padding: 0;
+}
+header #barra-sup #header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+header #barra-sup #header-container #logo {
+  width: 6rem;
+  padding-bottom: 0;
+}
+header #barra-sup #header-container .icon_header {
+  width: 2rem;
+  height: 2rem;
+  margin: 0%;
+  padding: 0;
+}
+header #barra-sup #header-container .icon_header:hover {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+header #barra-sup #header-container #search-bar {
+  height: 1.5rem;
+  margin: 0%;
+  padding-left: 1rem;
+  border-color: #86134D;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+header #barra-sup #header-container #barra {
+  width: 70%;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border-color: #DF80AD;
+}
+header #barra-sup #header-container .search-button {
+  color: #86134D;
+  background-color: white;
+  border-color: #86134D;
+  border-radius: 0.5em;
+  width: 7rem;
+  height: 2rem;
+  justify-self: center;
+}
+header #barra-sup #header-container .search-button:hover {
+  background-color: #86134D;
+  color: white;
+}
+
+@media only screen and (max-width: 960px) {
+  #logo {
+    display: none;
+  }
+  .icon_header {
+    display: none;
+  }
+  .search-button {
+    display: none;
+  }
+}
+nav {
+  background-color: #FCEAEA;
+  padding: 0;
+  height: 3.5rem;
+}
+nav #h1_logo {
+  margin: 0%;
+  color: #86134D;
+  font-family: "Dancing Script", cursive;
+  font-size: 2rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-size: 1rem;
+  width: 100%;
+}
+nav ul a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #86134D;
+  height: 100%;
+  margin-left: 1em;
+  text-decoration: none;
+}
+nav ul .menu_nav:hover {
+  color: #DF80AD;
+  font-size: larger;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
+}
+nav ul #sale {
+  color: #DF80AD;
+}
+
+footer {
+  text-align: center;
+  background-color: #F7EFE3;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+footer #footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer #footer-container #arrepentimiento {
+  color: #DF80AD;
+}
+footer #footer-container #stores_footer {
+  width: 20rem;
+  height: 20rem;
+  border-color: #86134D;
+  border: 1rem;
+}
+footer #footer-container .menu_footer {
+  color: #86134D;
+  text-decoration: none;
+}
+footer #footer-container .avatar_footer {
+  width: 3rem;
+}
+footer #all-rights {
+  color: #DF80AD;
+}
+
+.form-style {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+.form-style label {
+  color: #86134D;
+  font-size: 1.2rem;
+}
+.form-style input {
+  border-radius: 0.5rem;
+  border-color: #F2E6D0;
+  font-size: 1.2rem;
+}
+.form-style select {
+  border-radius: 0.5rem;
+  border-color: #F2E6D0;
+  font-size: 1.2rem;
+}
+.form-style textarea {
+  border-radius: 0.5rem;
+  border-color: #F2E6D0;
+  font-size: 1rem;
+}
+
+@media only screen and (max-width: 599px) {
+  .form-style {
+    align-items: center;
+  }
+  .form-style textarea {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+#main-banner {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#main-banner video {
+  width: 100%;
+}
+#main-banner button {
+  background-color: #86134D;
+  color: white;
+  border-color: #86134D;
+  border-radius: 0.5em;
+  width: 7rem;
+  height: 2.5rem;
+}
+
+h2 {
+  margin: 3rem;
+  margin-bottom: 0.5rem;
+  color: #86134D;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.carrousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carrousel .card {
+  margin: 2rem;
+}
+
+.button-container {
+  text-align: center;
+}
+.button-container #destacados-button {
+  background-color: #86134D;
+  color: white;
+  border-color: #86134D;
+  border-radius: 0.5em;
+  width: 7rem;
+  height: 2.5rem;
+}
+
+.section-container {
+  margin-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+}
+.section-container img {
+  height: 400px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 1em;
+}
+.payment-methods h3 {
+  color: #86134D;
+  margin-top: 4rem;
+}
+.payment-methods #payment-methods-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+  width: 70%;
+}
+.payment-methods #payment-methods-container .payment-methods-item {
+  display: flex;
+  width: 12em;
+  height: 12em;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.payment-methods #payment-methods-container .payment-methods-item img {
+  width: 100%;
+  text-align: center;
+}
+.payment-methods button {
+  background-color: #86134D;
+  color: white;
+  border-color: #86134D;
+  border-radius: 0.5em;
+  width: 7rem;
+  height: 2.5rem;
+}
+
+#destacados-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+#destacados-container #banner-2 {
+  width: 100%;
+  margin: 0%;
+}
+#destacados-container #card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 599px) {
+  #main-banner {
+    display: none;
+  }
+  #payment-methods-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #payment-methods-container .payment-methods-item:nth-child(3),
+  #payment-methods-container .payment-methods-item:nth-child(5) {
+    display: none;
+  }
+}
+.form {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.form h1 {
+  color: #86134D;
+  font-size: 3rem;
+  text-align: center;
+  margin: 2rem;
+  margin-bottom: 0.5rem;
+}
+.form #legales-arrepentimiento {
+  margin: 0%;
+  padding: 2rem;
+  font-size: 1.5rem;
+  text-align: justify;
+}
+.form .form-button {
+  background-color: #86134D;
+  color: white;
+  border-color: #86134D;
+  border-radius: 0.5em;
+  width: 7rem;
+  height: 2.5rem;
+  width: auto;
+}
+
+@media only screen and (max-width: 720px) {
+  .form h1 {
+    font-size: 3rem;
+  }
+  .form #legales-arrepentimiento {
+    font-size: 1rem;
+  }
+  .form textarea {
+    width: 100%;
+  }
+}
+.card {
+  border-color: #F2E6D0;
+  padding: 2rem;
+  width: 15rem;
+  box-shadow: 5px 10px 10px rgb(227, 225, 225);
+  text-align: center;
+}
+.card a {
+  color: #86134D;
+  background-color: white;
+  border-color: #86134D;
+  border-radius: 0.5em;
+  width: 7rem;
+  height: 2.5rem;
+}
+.card a:hover {
+  background-color: #86134D;
+  color: white;
+}
+
+#up-button {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: #86134D;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+}
+
+#up-button:hover {
+  background-color: #555;
+}
+
+.search-button-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 960px) {
+  #up-button {
+    height: 3.2rem;
+    width: 3.2rem;
+  }
+  .search-button-mobile {
+    display: block;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    background-color: #86134D;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

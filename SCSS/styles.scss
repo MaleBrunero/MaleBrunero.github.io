@@ -1,0 +1,15 @@
+@import './utilities/variables';
+@import './utilities/functions';
+@import './utilities/mixins';
+
+@import './layout/header';
+@import './layout/navbar';
+@import './layout/footer';
+@import './layout/forms';
+
+@import './views/home';
+@import './views/arrepentimiento';
+@import './views/plp';
+
+@import './components/cards';
+@import './components/buttons'

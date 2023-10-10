@@ -1,0 +1,37 @@
+footer {
+    text-align: center;
+    background-color: #F7EFE3;
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    #footer-container {
+        @include static-flex;
+
+        #arrepentimiento {
+            color: $secondary-color;
+        }
+
+        #stores_footer {
+            width: 20rem;
+            height: 20rem;
+            border-color: $default-color;
+            border: 1rem;
+        }
+
+        .menu_footer {
+            color: $default-color;
+            text-decoration: none;
+
+        }
+
+        .avatar_footer {
+            width: 3rem;
+        }
+
+    }
+
+    #all-rights {
+        color: $secondary-color;
+    }
+
+}

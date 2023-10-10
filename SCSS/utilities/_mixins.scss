@@ -1,0 +1,44 @@
+@mixin static-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin principal-heading {
+    color: $default-color ;
+    font-size: 3rem;
+    text-align: center;
+    margin: 2rem
+}
+
+
+@mixin secondary-heading {
+    color: $default-color ;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 2rem
+}
+
+@mixin ver-mas-button {
+    background-color: $default-color;
+    color: white;
+    border-color: $default-color;
+    border-radius: 0.5em;
+    width: 7rem;
+    height: 2.5rem
+}
+
+
+/*
+@mixin form-flex {
+    Acá va el flex para los formularios
+}
+*/
+
+@mixin h2-styles {
+    margin: 3rem;
+    margin-bottom: 0.5rem;
+    color: $default-color;
+    text-align: center;
+    font-size: 3rem
+}
