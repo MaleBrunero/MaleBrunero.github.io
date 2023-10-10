@@ -7,6 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <title>Newsletter</title>
 </head>
 
@@ -14,7 +15,7 @@
     <header>
         <div class="container-fluid" id="barra-sup">
             <div id="header-container" class="row">
-                <div class="col"> <a href="index.html">
+                <div class="col"> <a href="/..index.html">
                         <img id="logo" src="../images/logo.png" alt="Beauty">
                     </a>
                 </div>
@@ -22,19 +23,20 @@
                     <form role="search" id="search-bar">
                         <input id="barra" type="search" placeholder="Buscar productos" aria-label="Search">
                         <button class="search-button" type="submit">Buscar</button>
+                        <button class="search-button-mobile"><i class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
-                <div class="col"> <a href="../pages/mi-cuenta.html" id="mi-cuenta"><img class="icon_header"
+                <div class="col"> <a href="mi-cuenta.html" id="mi-cuenta"><img class="icon_header"
                             src="../images/avatar.png"></a>
-                    <a href="../pages/carrito.html"><img class="icon_header" src="../images/mycart.png"></a>
-                    <a href="../pages/tiendas.html"><img class="icon_header" src="../images/ubicacion.png" alt=""></a>
+                    <a href="carrito.html"><img class="icon_header" src="../images/mycart.png"></a>
+                    <a href="tiendas.html"><img class="icon_header" src="../images/ubicacion.png" alt=""></a>
                 </div>
             </div>
         </div>
 
 
 
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar position-sticky navbar-expand-lg">
             <div class="container-fluid">
                 <div>
                     <h1><a class="navbar-brand" id="h1_logo" href="#">Beauty</a></h1>
@@ -49,23 +51,23 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 list_nav">
                         <li class="nav-item">
-                            <a class=" menu_nav active" aria-current="page" href="../pages/perfumes-mujer.html">Perfumes
+                            <a class=" menu_nav active" aria-current="page" href="perfumes-mujer.html">Perfumes
                                 de mujer</a>
                         </li>
                         <li class="nav-item">
-                            <a class="menu_nav active" aria-current="page" href="../pages/perfumes-hombre.html">Perfumes
+                            <a class="menu_nav active" aria-current="page" href="perfumes-hombre.html">Perfumes
                                 de hombre</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="menu_nav active" aria-current="page" href="../pages/beauty-mujer.html">Beauty
+                            <a class="menu_nav active" aria-current="page" href="beauty-mujer.html">Beauty
                                 mujer</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="menu_nav active" aria-current="page" href="../pages/beauty-hombre.html">Beauty
+                            <a class="menu_nav active" aria-current="page" href="beauty-hombre.html">Beauty
                                 Hombre</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="menu_nav active" id="sale" aria-current="page" href="../pages/sale.html">SALE</a>
+                            <a class="menu_nav active" id="sale" aria-current="page" href="sale.html">SALE</a>
                         </li>
 
 
@@ -79,30 +81,28 @@
             </div>
         </nav>
     </header>
-
-
     <footer>
         <div class="container">
 
-            <div id="footer-container" class="row row-cols-md-1 row-cols-lg-3">
-                <div class="col-lg-3"><iframe id="stores_footer"
+            <div id="footer-container" class="row row-cols-md-1 row-cols-lg-4">
+                <div class="col"><iframe id="stores_footer"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.166914581678!2d-58.34900072365491!3d-34.67573657292845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33317a2014b13%3A0x34af079d6a85a226!2sGral.%20Escalada%20144%2C%20Sarand%C3%AD%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1692659558094!5m2!1ses!2sar"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-                <div class="col-lg-3"><a href="./pages/arrepentimiento.html" id="arrepentimiento">
+                <div class="col"><a href="arrepentimiento.html" id="arrepentimiento">
                         <p>Botón de arrepentimiento</p>
                     </a>
-                    <a class="menu_footer" href="./pages/newsletter.html">
+                    <a class="menu_footer" href="newsletter.html">
                         <p>Suscribirse al Newsletter</p>
                     </a>
                     <a class="menu_footer" href="">
                         <p>Legales</p>
                     </a>
-                    <a class="menu_footer" href="./pages/nosotros.html">
+                    <a class="menu_footer" href="nosotros.html">
                         <p>Nosotros</p>
                     </a>
                 </div>
-                <div class="col-lg-3"><a class="menu_footer" href="">
+                <div class="col"><a class="menu_footer" href="">
                         <p>Preguntas Frecuentes</p>
                     </a>
                     <a class="menu_footer" href="">
@@ -115,7 +115,7 @@
                         <p>Venta mayorista</p>
                     </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col">
                     <p>Atención al cliente: 0800-111-1234
 
                     </p>
@@ -139,6 +139,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/bf2202d8a6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
