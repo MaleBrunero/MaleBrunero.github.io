@@ -1,0 +1,48 @@
+.page-title {
+    @include principal-heading
+}
+.flex-general-plp {
+    display: flex;
+ .accordion-flush {
+    width: 30%;
+}
+h3 {
+    color: $default-color;
+    font-size: 1.5rem;
+}
+.filter_list_items {
+    list-style-type: none;
+    
+
+}
+.container-plp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+    .carrousel {
+        width: 95%;
+    }
+
+    .test {
+        display: flex;
+        justify-content: space-between;
+    width: 80%;
+       padding: 2%;
+    }
+
+    .page-item  {
+        a {
+        color: $default-color;
+        margin-top: 3rem;
+    }}
+
+
+    .page-item  {
+        a:hover {
+        background-color: $secondary-bg-color;
+    }
+}
+}
+}

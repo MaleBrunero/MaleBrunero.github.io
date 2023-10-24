@@ -116,48 +116,58 @@
 
                         <div class="row">
                             <div class="col-lg-4">
-                                <p>Calle: Escalada <br>
-                                    Número: 144
+                                <p>Calle y número: Escalada 144 <br>
+                                    Piso-Departamento: A <br>
+                                    Código Postal: 1636
+                                    Provincia: Buenos Aires
+                                    Partido: Vicente Lopez
+                                    Localidad: Olivos
+                                    Instrucciones para la entrega: Dejar el paquete en recepción
+
                                 </p>
                             </div>
                             <div class="col-lg-8">
-                                <form class="form-style" id="address_form" action="procesar_formulario.php"
-                                    method="post">
-                                    <div class="row">
-                                        <div class="col">
-                                            <label for="calle">Nombre de la Calle y Número:</label>
+                                <form id="address_form" action="procesar_formulario.php" method="post">
+                                    <div class="row row-sm-1 row-cols-md-2">
+                                        <div class="col form-style">
+                                            <label for="calle">Nombre de la Calle y N°:</label>
                                             <input type="text" id="calle" name="calle" required><br><br>
                                         </div>
 
 
-                                        <div class="col">
+                                        <div class="col form-style">
                                             <label for="piso_departamento">Piso-Departamento:</label>
                                             <input type="text" id="piso_departamento" name="piso_departamento"><br><br>
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <div class="col">
+                                    <div class="row row-sm-1 row-cols-md-2">
+                                        <div class="col form-style">
                                             <label for="codigo_postal">Código Postal:</label>
                                             <input type="text" id="codigo_postal" name="codigo_postal" required><br><br>
                                         </div>
-                                        <div class="col">
+                                        <div class="col form-style">
                                             <label for="provincia">Provincia:</label>
                                             <input type="text" id="provincia" name="provincia" required><br><br>
                                         </div>
                                     </div>
+                                    <div class="row row-sm-1 row-cols-md-2">
+                                        <div class="col form-style">
+                                            <label for="partido">Partido:</label>
+                                            <input type="text" id="partido" name="partido" required><br><br>
+                                        </div>
+                                        <div class="col form-style">
+                                            <label for="localidad">Localidad:</label>
+                                            <input type="text" id="localidad" name="localidad" required><br><br>
+                                        </div>
+                                    </div>
+                                    <div class="form-style">
+                                        <label for="instrucciones">Instrucciones para la Entrega:</label><br>
+                                        <textarea id="instrucciones" name="instrucciones" rows="4"
+                                            cols="50"></textarea><br><br>
+                                    </div>
 
-                                    <label for="partido">Partido:</label>
-                                    <input type="text" id="partido" name="partido" required><br><br>
-
-                                    <label for="localidad">Localidad:</label>
-                                    <input type="text" id="localidad" name="localidad" required><br><br>
-
-                                    <label for="instrucciones">Instrucciones para la Entrega:</label><br>
-                                    <textarea id="instrucciones" name="instrucciones" rows="4"
-                                        cols="50"></textarea><br><br>
-
-                                    <button type="submit">Editar información</button>
+                                    <button class="form-button" type="submit">Editar info</button>
                                 </form>
                             </div>
                         </div>
@@ -176,12 +186,7 @@
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the
-                        collapse plugin adds the appropriate classes that we use to style each element. These classes
-                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
-                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
-                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
-                        does limit overflow.
+                        No tenés tarjetas cargadas
                     </div>
                 </div>
             </div>

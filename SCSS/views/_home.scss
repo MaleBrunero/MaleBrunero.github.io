@@ -33,19 +33,22 @@ h2 {
     }
 }
 
-#slider {
-    background-color: black;
-}
 
+
+.section-flex {
+    display: flex;
+    flex-direction: column;
 .section-container {
     margin-top: 1.5rem;
-    width: 100%;
+    width: 80%;
     @include static-flex;
     align-self: center;
+    
 
     img {
-        height: 400px;
+        width: 100%;
     }
+}
 }
 
 .payment-methods {
@@ -131,4 +134,17 @@ h2 {
         }
     }
 
-}
+    h2 {
+        font-size: 2rem;
+    }
+
+    .img-container {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+
+    
+
+      
+
+}}
