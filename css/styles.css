@@ -387,48 +387,113 @@ h2 {
     width: 100%;
   }
 }
-.page-title {
+main {
+  padding-right: 3rem;
+  padding-left: 3rem;
+}
+main .page-title {
   color: #86134D;
   font-size: 3rem;
   text-align: center;
   margin: 2rem;
 }
-
-.flex-general-plp {
+main .category-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+main .category-banner .conocer-mas-button {
+  position: absolute;
+  z-index: 2;
+  text-decoration: none;
+  color: #86134D;
+  font-size: 2rem;
+  bottom: 5%;
+}
+main .category-banner .conocer-mas-button:hover {
+  font-size: 3rem;
+  color: #DF80AD;
+}
+main .category-banner video {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  width: 100%;
+  z-index: 1;
+}
+main .flex-general-plp {
   display: flex;
 }
-.flex-general-plp .accordion-flush {
-  width: 30%;
+main .flex-general-plp .accordion-flush {
+  width: 40%;
 }
-.flex-general-plp h3 {
+main .flex-general-plp .accordion-flush h3 {
+  margin: 1.5rem;
+}
+main .flex-general-plp #filter-mobile {
+  display: none;
+}
+main .flex-general-plp #filter-mobile .btn-primary {
+  background-color: #86134D;
+  border-color: #86134D;
+}
+main .flex-general-plp h2 {
   color: #86134D;
   font-size: 1.5rem;
 }
-.flex-general-plp .filter_list_items {
+main .flex-general-plp .filter_list_items {
   list-style-type: none;
 }
-.flex-general-plp .container-plp {
+main .flex-general-plp .container-plp {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.flex-general-plp .container-plp .carrousel {
+main .flex-general-plp .container-plp .carrousel {
   width: 95%;
 }
-.flex-general-plp .container-plp .test {
+main .flex-general-plp .container-plp .test {
   display: flex;
   justify-content: space-between;
   width: 80%;
   padding: 2%;
 }
-.flex-general-plp .container-plp .page-item a {
+main .flex-general-plp .container-plp .page-item a {
   color: #86134D;
   margin-top: 3rem;
 }
-.flex-general-plp .container-plp .page-item a:hover {
+main .flex-general-plp .container-plp .page-item a:hover {
   background-color: #FCEAEA;
 }
 
+@media screen and (max-width: 599px) {
+  main .category-banner {
+    display: none;
+  }
+  main .page-title {
+    font-size: 2rem;
+  }
+  main .flex-general-plp {
+    display: flex;
+    flex-direction: column;
+  }
+  main .flex-general-plp #accordionFlushExample {
+    display: none;
+  }
+  main .flex-general-plp #filter-mobile {
+    display: block;
+    align-self: start;
+    margin: 1rem;
+    margin-right: 1rem;
+    width: 9rem;
+  }
+  main .flex-general-plp .test {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+  }
+}
 .card {
   border-color: #F2E6D0;
   padding: 2rem;

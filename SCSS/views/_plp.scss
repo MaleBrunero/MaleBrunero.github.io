@@ -1,48 +1,145 @@
+main {
+
+    padding-right: 3rem;
+    padding-left: 3rem;
+
 .page-title {
     @include principal-heading
 }
+
+.category-banner {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+    position: relative;
+
+    .conocer-mas-button {
+        position:absolute;
+        z-index: 2;
+        text-decoration: none;
+        color: $default-color;
+        font-size: 2rem;
+        bottom: 5%;
+    }
+
+    .conocer-mas-button:hover {
+        font-size: 3rem;
+        color: $secondary-color;
+    }
+
+video {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    width: 100%;
+    z-index: 1;
+}
+}
+
 .flex-general-plp {
     display: flex;
- .accordion-flush {
-    width: 30%;
-}
-h3 {
-    color: $default-color;
-    font-size: 1.5rem;
-}
-.filter_list_items {
-    list-style-type: none;
-    
 
+    .accordion-flush {
+        width: 40%;
+
+        h3 {
+            margin: 1.5rem;
+        }
+    }
+
+    #filter-mobile {
+       display: none;
+
+        .btn-primary {
+            background-color: $default-color;
+            border-color: $default-color;
+        }
+
+    }
+
+    h2 {
+        color: $default-color;
+        font-size: 1.5rem;
+    }
+
+    .filter_list_items {
+        list-style-type: none;
+
+
+    }
+
+    .container-plp {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .carrousel {
+            width: 95%;
+        }
+
+        .test {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+            padding: 2%;
+        }
+
+        .page-item {
+            a {
+                color: $default-color;
+                margin-top: 3rem;
+            }
+        }
+
+
+        .page-item {
+            a:hover {
+                background-color: $secondary-bg-color;
+            }
+        }
+    }
 }
-.container-plp {
+}
+
+@media screen and (max-width: 599px) {
+ main {
+    .category-banner {
+        display: none;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    
+    }
+
+   .flex-general-plp {
     display: flex;
     flex-direction: column;
-    align-items: center;
-   
 
-    .carrousel {
-        width: 95%;
+    #accordionFlushExample {
+        display: none;
+    } 
+
+    #filter-mobile {
+        display: block;
+        align-self: start;
+        margin: 1rem;
+        margin-right: 1rem;
+        width: 9rem;
+
     }
 
     .test {
         display: flex;
-        justify-content: space-between;
-    width: 80%;
-       padding: 2%;
+        flex-direction: row-reverse;
+        margin: 0;
+        
     }
 
-    .page-item  {
-        a {
-        color: $default-color;
-        margin-top: 3rem;
-    }}
+   }
+
+ }
 
 
-    .page-item  {
-        a:hover {
-        background-color: $secondary-bg-color;
-    }
-}
-}
-}
+  }
