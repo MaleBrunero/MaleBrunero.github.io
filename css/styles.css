@@ -408,9 +408,12 @@ main .category-banner .conocer-mas-button {
   position: absolute;
   z-index: 2;
   text-decoration: none;
-  color: #86134D;
+  color: white;
   font-size: 2rem;
   bottom: 5%;
+}
+main .category-banner .tracking-in-contract-bck {
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.61, 0.355, 1) 3s both;
 }
 main .category-banner .conocer-mas-button:hover {
   font-size: 3rem;
@@ -494,6 +497,20 @@ main .flex-general-plp .container-plp .page-item a:hover {
     margin: 0;
   }
 }
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 .card {
   border-color: #F2E6D0;
   padding: 2rem;
@@ -512,6 +529,10 @@ main .flex-general-plp .container-plp .page-item a:hover {
 .card a:hover {
   background-color: #86134D;
   color: white;
+}
+
+.card:hover {
+  border-color: #86134D;
 }
 
 #up-button {

@@ -18,12 +18,19 @@ justify-content: center;
         position:absolute;
         z-index: 2;
         text-decoration: none;
-        color: $default-color;
+        color: white;
         font-size: 2rem;
         bottom: 5%;
     }
 
-    .conocer-mas-button:hover {
+    .tracking-in-contract-bck {
+        animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) 3s both;
+
+    }
+
+
+
+    .conocer-mas-button:hover {  
         font-size: 3rem;
         color: $secondary-color;
     }
@@ -143,3 +150,19 @@ video {
 
 
   }
+
+  @keyframes tracking-in-contract-bck {
+    0% {
+      letter-spacing: 1em;
+      transform: translateZ(400px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
